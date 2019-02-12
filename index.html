@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+<!--I used the css from bootstrap so that I didnt have to make my own css. the instructions allowed it. so i linked it above-->
+</head>
+<body>
+    <h1>WELCOME TO PSYCHIC GAME</h1>
+    <button onclick="getWord()">Get New Word</button><p></p>
+<!--I used youtube, and they gave me the idea of starting the game by using this button above.-->
+  
+    <button onclick="guessed()">Guess letter</button><p></p>
+    <input type="text" id="guess" maxlength="1" onkeydown="guessed()"></input>
+<!--the line above is to allow the player to guess the letter of their choice-->
+      
+      <p>Right Word</p>
+      <p>
+      <div id="0"></div>
+      <div id="1"></div>
+      <div id="2"></div>
+      <div id="3"></div>
+      <div id="4"></div>
+      <div id="5"></div>
+      <div id="6"></div>
+      <div id="7"></div>
+      <div id="8"></div>
+      <div id="9"></div>
+      <div id="10"></div>
+      <div id="11"></div>
+      <div id="12"></div>
+      <div id="13"></div>
+      <div id="14"></div>
+      <div id="15"></div>
+      <div id="16"></div>
+      <div id="17"></div>
+      <div id="18"></div>
+      <div id="19"></div>
+      <div id="20"></div>
+        </p>
+    <br>
+      <p>Guessed Letters</p>
+       <p><div id="output1"></div></p><br>
+    <p>Wrong Letters</p>
+       <p><div id="output3"></div></p><br>
+      <p>Guesses Left</p>
+       <p><div id="output2"></div></p><br>
+<!--these will activate depenidng if the letter is correct or not -->
+
+<script src="game.js"></script>
+<!--I ask a classmate and he told me to place the javascript at the bottom of the page so that i loads last. But it still seems to be the case and doesn't work-->
+</body>
+</html>
